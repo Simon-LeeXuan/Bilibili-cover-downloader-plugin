@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>B站封面批量下载器</h2>
+    <div class="status-section">
+      <div id="status" class="status">准备就绪</div>
+      <div id="count" class="count">找到 0 个封面</div>
+    </div>
+    <div class="button-group">
+      <button id="scanCovers" class="primary-btn">扫描封面</button>
+      <button id="downloadAll" class="download-btn" disabled>下载所有封面</button>
+    </div>
+    <div class="preview-section">
+      <h3>封面预览</h3>
+      <div id="coverList" class="cover-list"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

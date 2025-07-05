@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "B站封面批量下载器",
+  "version": "1.0",
+  "description": "批量下载B站页面上的所有封面图",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://*.bilibili.com/*",
+    "https://*.hdslb.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.bilibili.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+} 

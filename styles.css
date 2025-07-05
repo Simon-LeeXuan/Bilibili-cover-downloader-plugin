@@ -1,0 +1,179 @@
+body {
+  width: 400px;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  color: #00a1d6;
+  text-align: center;
+  font-size: 18px;
+}
+
+h3 {
+  margin: 15px 0 10px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.status-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.status {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00a1d6;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.primary-btn, .download-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background-color: #00a1d6;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #0091c2;
+}
+
+.primary-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.download-btn {
+  background-color: #fb7299;
+  color: white;
+}
+
+.download-btn:hover:not(:disabled) {
+  background-color: #e85a87;
+}
+
+.download-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.preview-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.cover-list {
+  max-height: 300px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.cover-item {
+  background-color: white;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cover-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.cover-image {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.cover-title {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.success {
+  color: #27ae60;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* 滚动条样式 */
+.cover-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cover-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.cover-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.cover-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 
